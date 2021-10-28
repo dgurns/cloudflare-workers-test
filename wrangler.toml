@@ -1,7 +1,7 @@
-name = "my-app"
+name = "cloudflare-workers-test"
 type = "javascript"
-zone_id = ""
-account_id = ""
+zone_id = "899746401968b9da56bf2e86d94adad3"
+account_id = "19fbc3afa40daca99965456c784468e2"
 route = ""
 workers_dev = true
 compatibility_date = "2021-10-28"

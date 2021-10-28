@@ -1,13 +1,14 @@
 {
-  "name": "worker-typescript-template",
+  "name": "cloudflare-workers-test",
   "version": "1.0.0",
   "description": "Cloudflare worker TypeScript template",
   "main": "dist/worker.js",
   "scripts": {
     "build": "webpack",
+		"publish-branch": "CF_NAME=cloudflare-workers-test-$(git rev-parse --abbrev-ref HEAD) wrangler publish",
     "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
     "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
-    "test": "jest --config jestconfig.json --verbose"
+    "test": "jest --config jestconfig.json --verbose --watch"
   },
   "author": "author",
   "license": "MIT OR Apache-2.0",
